@@ -1,0 +1,3 @@
+# Ignore everything in arabic-speech-corpus
+dr_yseer_phonetizer/arabic-speech-corpus/*
+
