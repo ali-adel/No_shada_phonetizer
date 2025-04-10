@@ -281,7 +281,7 @@
 
 #                 #Append utterance pronunciation to utterancesPronunciations
 #                 print(f"DEBUG: Adding to utterancesPronuncations: {' '.join(pronunciations[0])}")
-#                 utterancesPronuncations[-1] += u" " + u" ".join(pronunciations[0])
+#                 utterancesPronuncations[-1] += u" " + u" ".join(pronunciations[-1])
 
 #                 #Add Stress to each pronunciation
 #                 pIndex = 0

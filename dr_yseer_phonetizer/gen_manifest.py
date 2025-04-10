@@ -58,12 +58,11 @@ def create_manifest(csv_filename, dataset_path):
             text = " ".join(fields[1:])
             
             audio_path = f"{dataset_path}/{file_id.strip()}.wav"
-            print(remove_punctuation(text))
+            #print(remove_punctuation(text))
             
-            transcription = "<sil> " + " ".join(phonetise(remove_punctuation(text))[1]).replace("sil", "<sil>")
-            #transcription = phonetise(text)
+            transcription = "<sil> " + " ".join(phonetise(text)[1]).replace("sil", "<sil>")
             transcription = remove_digits(transcription)
-            
+            print("transcript: ",transcription)
             duration = get_wav_duration(audio_path)
             
             if duration is not None:
